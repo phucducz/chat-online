@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChatOnline</string>
+    <string name="login">"https://qldt.vlute.edu.vn/VLUTE-Web/login.action?username=%s&amp;password=%s</string>
+
+    <string name="path_html_shedule">raw\shedule.txt</string>
+    <string name="path_json_info">raw\json_info.txt</string>
+    <string name="json_infor">https://ems.vlute.edu.vn/api/danhmuc/getsinhvienbykeyword/%s</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "661801586357",
+    "project_id": "chat-online-bb7f3",
+    "storage_bucket": "chat-online-bb7f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661801586357:android:9a76d3fb1a53603ea338fc",
+        "android_client_info": {
+          "package_name": "com.firebaseclound.chatonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661801586357-3c3g9n5hoj732sujs6uc7tvkpmfh0gtq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_hdgxZCOaM23_UMzYuaRt_bAe7w4ZrCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661801586357-3c3g9n5hoj732sujs6uc7tvkpmfh0gtq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

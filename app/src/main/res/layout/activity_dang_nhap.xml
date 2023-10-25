@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangNhap">
+
+
+    <ImageView
+        android:layout_width="@dimen/sizeImage_Width_Avatar"
+        android:layout_height="@dimen/sizeImage_Height_Avatar"
+        android:id="@+id/imgAvatar"
+        android:src="@drawable/avt_vlute"
+        android:layout_marginTop="@dimen/marginTop_Header"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sizeEditText_Height"
+        android:id="@+id/edtUsername"
+        android:inputType="number"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="@dimen/marginTop"
+        android:textColor="@color/colorBlack"
+        android:maxLength="@integer/max_lenght_username"
+        android:drawableLeft="@drawable/ic_action_accound"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_edittext"
+        android:layout_below="@id/imgAvatar"
+        android:hint="Nhập tài khoản"
+        android:textSize="@dimen/sizeText_Input"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sizeEditText_Height"
+        android:id="@+id/edtPassword"
+        android:inputType="textPassword"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="@dimen/marginTop"
+        android:drawableLeft="@drawable/ic_action_key"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_edittext"
+        android:layout_below="@id/edtUsername"
+        android:hint="Nhập mật khẩu"
+        android:textSize="@dimen/sizeText_Input"
+        />
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_marginTop="@dimen/marginTop"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/relCheckBox"-->
+<!--        android:layout_below="@id/edtPassword"-->
+<!--        android:layout_marginLeft="@dimen/marginLeft"-->
+<!--        >-->
+<!--        <CheckBox-->
+<!--            android:layout_width="@dimen/sizeWidth_icon_Header"-->
+<!--            android:layout_height="@dimen/sizeHeight_icon_Header"-->
+<!--            android:id="@+id/ckbCheckLogin"-->
+<!--            />-->
+<!--        <TextView-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Ghi nhớ"-->
+<!--            android:id="@+id/txtLabelDangNhap"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:layout_marginTop="@dimen/marginTop_CheckBox"-->
+<!--            android:layout_toRightOf="@id/ckbCheckLogin"-->
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="@dimen/sizeButton_Height"
+        android:id="@+id/btnDangNhap"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sizeText_Button"
+        android:text="Đăng Nhập"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:layout_below="@id/edtPassword"
+        android:background="@drawable/background_button"
+        />
+
+</RelativeLayout>

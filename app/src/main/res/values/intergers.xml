@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="search_sussec">1</integer>
+    <integer name="login_sussec">10000</integer>
+    <integer name="max_lenght_username">30</integer>
+    <integer name="start_position_credits_subject">5</integer>
+    <integer name="start_position_name_subject">3</integer>
+    <integer name="sub_position_name_subject_practice">2</integer>
+    <integer name="sub_position_name_subject_theory">1</integer>
+    <integer name="weightSum_menu_main">4</integer>
+    <integer name="element_menu">1</integer>
+    <integer name="first_page">1</integer>
+</resources>

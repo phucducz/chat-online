@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.firebaseclound.chatonline.CircleImage
+        android:layout_marginTop="5dp"
+        android:layout_width="@dimen/sizeImage_Width_Message_Avatar"
+        android:layout_height="@dimen/sizeImage_Height_Message_Avatar"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="@dimen/marginLeft_Text"
+        android:id="@id/imgAvatar"
+        android:src="@drawable/cat"
+        />
+
+    <TextView
+
+        android:id="@+id/txtTimeReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/margin_Message"
+        android:layout_marginBottom="@dimen/margin_Message"
+        android:text="null"
+        android:textColor="@color/colorGrey_1"
+        android:textSize="@dimen/sizeText_3"
+        android:textStyle="italic"
+        android:layout_toRightOf="@id/imgAvatar"
+        />
+    <FrameLayout
+        android:layout_below="@id/txtTimeReceive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/colContentMessage"
+        android:layout_toRightOf="@id/imgAvatar"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relMessageSend"
+            android:layout_width="@dimen/sizeWidth_Message"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_boder_message_send"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/marginTop_Elements_ListView">
+
+            <TextView
+
+                android:id="@+id/txtMessageSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_Message"
+                android:text="null"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sizeText_2"
+
+                />
+
+            <TextView
+                android:layout_below="@id/txtMessageSend"
+                android:gravity="right"
+                android:id="@+id/txtTimeSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginRight="@dimen/marginRight"
+                android:layout_marginTop="@dimen/marginTop_Elements_ListView"
+                android:layout_gravity="bottom|right"
+                android:text="null"
+                android:textColor="@color/colorGrey_7"
+                android:textSize="@dimen/sizeText_3"
+                android:textStyle="italic"
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relMessageReceive"
+            android:layout_width="@dimen/sizeWidth_Message"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/background_boder_message_receive"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtHoTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_Message"
+                android:text="null"
+                android:textStyle="bold"
+                android:textColor="#FFE500"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:layout_below="@id/txtHoTen"
+                android:id="@+id/txtMessageReceive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_Message"
+                android:text="null"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sizeText_2"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
